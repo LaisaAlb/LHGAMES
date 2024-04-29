@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+:root {
+    --josefinSaas: 'Jersey 25', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(#281586, #204691);
+  }
+h2{
+    font-family: var(--josefinSaas);
+    font-size: 350%; 
+    color: #111;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 2%;
+    border: 2px solid rgb(45, 45, 45);
+    background: #dae2f4;
+    height: 35px;
+}  
+.form-content a {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden; 
+    color: #fafafa;
+}
+.btn {
+    background-color: #012c81;
+    color: #111;
+    text-decoration: none;
+    font-size: 20px;
+    width: 60%; 
+    height: 30px; 
+    border-radius: 3px;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: var(--josefinSaas);
+}
+.btn:hover {
+    background: #bacaed;
+}

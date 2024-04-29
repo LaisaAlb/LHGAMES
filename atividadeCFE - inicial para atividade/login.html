@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lhgames/login</title>
+    
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div>
+        <form id="form" class="form">
+            <h1 class="login-text">Login</h1>
+            <div class="form-content">
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="Digite seu email..." required>
+            </div>
+            <br>
+            <div class="form-content">
+                <label for="password"></label>
+                <input type="password" id="password" placeholder="Digite sua senha..." required>
+            </div>
+            <br>
+            <a class="btn" type="submit" href="index.html">ENTRAR</a>
+            <div id="cadastro">
+                <p id="linkcadastro">Se não tem uma conta <a onclick="window.location.href='cadastro.html'"><strong>CADASTRE-SE!</strong></a></p>
+            </div>
+        </form>
+    </div>
+  
+
+    <script src="js/login.js"></script>
+</body>
+</html>

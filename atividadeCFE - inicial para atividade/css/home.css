@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Jersey+15&family=Jersey+20&family=Rubik+80s+Fade&family=Rubik+Marker+Hatch&display=swap');
+:root {
+    --josefinSaas: 'Josefin Sans', sans-serif;
+    --jersey: 'Jersey 20', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 1370px;
+    height: auto;
+}
+body{
+    background: linear-gradient(#281586, #204691);
+}
+header{
+    background-color: #BED1F5;
+    height: 70px;
+    font-weight: bold;
+    font-family: var(--jersey);
+}
+#logo{
+    height: 50px;
+    margin-top: -90px;
+    margin-left: 20px;
+}
+#login {
+    margin-top: 3px;
+    height: 31px;
+    width: 60px;
+    background-color: #130b6d6d;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.nav-item {
+    display: flex;
+    align-items: center; 
+}
+.nav-link {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+#inicio, #topico2 {
+    width: 1100px;
+    height: 500px;
+    background-color: #D2DBF8;
+    margin-top: 80px;
+    margin-left: 9%;
+    border-radius: 10px;
+}
+#img1{
+    width: 550px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 20px;
+    float: left;
+    border-radius: 5px;
+}
+h1{
+    font-family: var(--jersey);
+    align-items: center;
+    height: 75px;
+    color: black;
+    padding-top: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+#texto1{
+    font-family: var(--josefinSaas);
+    color: rgb(15, 15, 15);
+    margin-top: 20px;
+}
+#topico {
+    background-color: #758AB5;
+    width: 750px;
+    height: 150px;
+    margin-left: auto; 
+    margin-right: auto;
+    border-radius: 10px;
+    margin-top: -50px;
+    padding: 20px; 
+    text-align: center;
+}
+strong{
+    font-family: var(--jersey);
+    font-size: 18px;
+}
+#convite2{
+    margin-left: 70px;
+    background-color: #130b6d6d;
+    border-radius: 5px;
+    font-family: var(--jersey);
+    font-weight: bold;
+    color: #111;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+}
+#topico2 {
+    width: 1100px;
+    height: auto;
+    background-color: #D2DBF8;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 20px; 
+    text-align: center;
+    border-radius: 5px;
+}
+#texto1 {
+    color: black;
+    text-align: center;
+    margin-top: 100px;
+    font-family: var(--josefinSaas);
+}
+#texto2{
+    color: black;
+    text-align: center;
+    margin-top: 100px;
+    font-family: var(--josefinSaas);
+}
+.texto3{
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    font-family: var(--josefinSaas);
+    margin-bottom: 20px;
+}
+#title2 {
+    color: #11068F;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding-top: 10px;
+}
+#texto2{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}
+#img2{
+    width: 450px;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 10px;
+    float: right;
+    border-radius: 10px;
+}
+#convite1{
+    position: absolute;
+    right: 20px;
+    background-color: #130b6d6d;
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: var(--jersey);
+    margin-top: 70px;
+    margin-right: 170px;
+    font-size: 18px;
+}
+#jogos{
+    text-align: center;
+    margin-top: 50px;
+    width: 1100px;
+    margin-left: 9%;
+    height: 700px;
+}
+#img_jogos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto auto; 
+    gap: 10px;
+    list-style-type: none;
+}  
+li {
+    padding: 10px;
+}
+.card-title{
+    font-family: var(--jersey);
+    font-weight: bold;
+    color: #111;
+}
+.card.text{
+    color: #111;
+    font-family: var(--josefinSaas);
+}
+br {
+    font-family: var(--jersey);
+    color: #111;
+    font-weight: bold;
+}
+footer {
+    text-align: left; 
+    background-color: #BED1F5;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 20px;
+}
+footer {
+    text-align: left;
+    background-color: #BED1F5;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    padding: 20px;
+    font-family: var(--jersey);
+    font-weight: bold;
+    font-size: 17px;  
+    margin-top: 50px;
+}
+#footer {
+    list-style: none;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.li_footer {
+    margin-top: -12px;
+}
+#img_footer {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+  
+
+
+
