@@ -11,15 +11,29 @@
     <div class="container">
         <!-- NAVBAR -->
         <nav class="nav">
-            <ul>
+            <div class="menu-toggle" aria-label="Abrir Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="menu">
                 <li><a href="#inicio" aria-label="Ir para a seção de Início">Início</a></li>
                 <li><a href="#sobre" aria-label="Ir para a seção Sobre">Sobre</a></li>
                 <li><a href="#jogos" aria-label="Ir para a seção Jogos">Jogos</a></li>
                 <li><a href="#contato" aria-label="Ir para a seção de Contato">Contato</a></li>
             </ul>
         </nav>
+        
 
         <div class="spacer"></div>
+
+        <script>
+            document.querySelector('.menu-toggle').addEventListener('click', function() {
+                this.classList.toggle('active');
+                document.querySelector('.menu').classList.toggle('active');
+            });
+        </script>
+        
 
         <hr>
 
@@ -62,7 +76,7 @@
         <!-- JOGOS -->
         <section id="jogos">
             <h2 class="titleTrabalhos">CONFIRA NOSSOS JOGOS EM DESTAQUE</h2>
-            <div class="carousel">
+            <d class="carousel">
                 <div class="card">
                     <img src="../assets/gta.jpeg" alt="Imagem do jogo GTA V">
                     <h3>GTA V</h3>
@@ -93,18 +107,7 @@
                     <p>R$ 50,00</p>
                     <button>Comprar 🛒 </button>
                 </div>
-                <div class="card">
-                    <img src="../assets/minecraft.jpg" alt="Imagem do jogo Minecraft">
-                    <h3>MINECRAFT</h3>
-                    <p>R$ 50,00</p>
-                    <button>Comprar 🛒 </button>
-                </div>
-                <div class="card">
-                    <img src="../assets/supermario.jpeg" alt="Imagem do jogo Super Mario">
-                    <h3>SUPER MARIO</h3>
-                    <p>R$ 50,00</p>
-                    <button>Comprar 🛒 </button>
-                </div>
+                </d
             </div>
         </section>
 

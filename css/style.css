@@ -4,19 +4,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
-*{
+* {
     margin-top: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #050a30;
     min-height: 100vh;
     max-width: 100%;
 }
 
-.container{
+.container {
     max-width: 1400px;
     padding: 3px;
     margin: 0 auto;
@@ -30,6 +30,7 @@ body{
     justify-content: flex-end;
     margin-right: 50px;
     font-family: "Bungee", serif;
+    position: relative;
 }
 
 .nav ul {
@@ -52,12 +53,53 @@ body{
     border-radius: 30px;
 }
 
-.nav ul li a:hover{
+.nav ul li a:hover {
     background-color: rgb(2, 19, 105);
 }
+
+/* Menu Toggle - Hamburger */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Show the menu when active */
+.nav ul.active {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    /* Hide the menu items in small screens */
+    .nav ul {
+        display: none;
+        width: 100%;
+    }
+
+    /* Show the menu toggle icon */
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav ul.active {
+        display: flex;
+    }
+}
+
 .hero {
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
     gap: 20px;
     padding: 20px;
@@ -66,12 +108,12 @@ body{
 .hero-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
-    max-width: 50%; 
+    align-items: flex-start;
+    max-width: 50%;
 }
 
 .hero-content .logo {
-    width: 300px; 
+    width: 300px;
     height: 100%;
     margin-top: -120px;
     margin-left: 20px;
@@ -105,13 +147,13 @@ body{
     margin-left: 200px;
 }
 
-.hero-content .btn:hover{
+.hero-content .btn:hover {
     translate: 0.6s;
     background-color: #790303;
 }
 
 .hero-image {
-    margin-left: auto; 
+    margin-left: auto;
 }
 
 .hero-image img {
@@ -126,23 +168,27 @@ body{
     color: #ffffff;
     border-radius: 20px;
 }
-.about h2{
+
+.about h2 {
     font-family: "VT323", serif;
 }
-.about p{
+
+.about p {
     font-family: "Bungee", serif;
     color: rgb(196, 195, 195);
 }
 
-.feature h3{
+.feature h3 {
     font-family: "Audiowide", serif;
     color: #ffffff;
 }
-.feature p{
+
+.feature p {
     font-family: sans-serif;
     color: #c7b9b9;
     font-weight: 300;
 }
+
 .features {
     display: flex;
     justify-content: space-between;
@@ -163,38 +209,24 @@ body{
 .titleTrabalhos {
     color: #CCC;
     font-family: "VT323", serif;
-    text-align: center; 
-    margin-top: 40px; 
-    margin-bottom: 40px; 
-    font-size: 32px; 
-    font-weight: bold; 
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: bold;
 }
-
 
 .carousel-container {
-    width: 50%;
-    overflow: hidden;
+    width: 100%;
+    overflow-x: auto;
     position: relative;
+    display: flex;
+    gap: 20px;
 }
+
 .carousel {
     display: flex;
     gap: 20px;
-    animation: slide 20s linear infinite;
-}
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-.card h3 {
-    margin: 10px 0 5px;
-}
-.card p {
-    font-weight: bold;
-    color: #27ae60;
-}
-@keyframes slide {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
 }
 
 .card {
@@ -206,7 +238,12 @@ body{
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 .card button {
@@ -215,41 +252,35 @@ body{
     border: none;
     border-radius: 5px;
     height: 40px;
-    width: 100%;  
+    width: 100%;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: center;
-    margin-top: auto; 
+    margin-top: auto;
 }
 
 .card button:hover {
     background-color: #2ecc71;
-    transform: translateY(-3px); 
+    transform: translateY(-3px);
 }
 
 .card button:focus {
-    outline: none; 
-    box-shadow: 0 0 10px rgba(39, 174, 96, 0.7); 
+    outline: none;
+    box-shadow: 0 0 10px rgba(39, 174, 96, 0.7);
 }
 
 .card button:active {
     background-color: #16a085;
-    transform: translateY(1px); 
+    transform: translateY(1px);
 }
 
 .card img {
     width: 200px;
-    height: 100%px; 
-    object-fit: cover; 
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-    .features {
-        flex-direction: column;
-    }
 }
 
 .contato {
@@ -277,3 +308,162 @@ body{
 .contato p:hover {
     text-decoration: underline;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .hero-content .btn {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav ul {
+        gap: 15px;
+    }
+
+    .carousel-container {
+        overflow-x: scroll;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+        margin-top: -70px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-content .btn {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        margin-left: 100px;
+    }
+
+    .hero-content .logo{
+        margin-left: 100px;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel {
+        overflow-x: scroll;
+        gap: 10px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 22px;
+        margin-top: -50px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero-content .btn {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .card {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .contato h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        margin-left: 100px;
+    }
+
+    .hero-content .logo{
+        margin-left: 100px;
+    }
+    
+    .nav {
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav ul li a {
+        font-size: 14px;
+    }
+
+    .hero-content h1 {
+        font-size: 20px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .contato h2 {
+        font-size: 24px;
+    }
+
+    .contato p {
+        font-size: 16px;
+    }
+}
+
+
