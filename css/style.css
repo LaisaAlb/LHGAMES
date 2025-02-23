@@ -161,6 +161,24 @@ body {
     height: auto;
 }
 
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Aplica a animação à imagem na hero section */
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    animation: slideIn 2s ease-out forwards;
+}
+
 .about {
     background: rgb(35, 83, 138);
     padding: 60px 20px;
